@@ -30,6 +30,7 @@ void drawCurve(Point[] curve, int count) {
   strokeWeight(2);
   Point last = curve[0];
   for (int i=1 ; i<count ; i++){
+    //point(curve[i].x, curve[i].y);
     line(curve[i].x, curve[i].y, last.x, last.y);
     last = curve[i];
   }
